@@ -1,0 +1,17 @@
+{
+  "log_dir": "logs",
+  "db_path": "data/siem.db",
+  "cooldown_seconds": 600,
+  "rules": {
+    "R001": {"enabled": true, "threshold": 5, "window_seconds": 120},
+    "R002": {"enabled": true, "threshold": 8, "window_seconds": 300},
+    "R003": {"enabled": true, "threshold": 5, "window_seconds": 600},
+    "R004": {"enabled": true, "window_seconds": 3600},
+    "R005": {"enabled": true},
+    "R006": {"enabled": true},
+    "R007": {"enabled": true, "groups": ["Domain Admins", "Enterprise Admins", "Administrators", "Schema Admins"]},
+    "R008": {"enabled": true, "min_queries": 10, "max_cv": 0.1, "allowlist": ["windowsupdate.com", "microsoft.com"]},
+    "R009": {"enabled": true, "bytes_threshold": 100000000, "window_seconds": 600},
+    "R010": {"enabled": true, "blocklist_file": "data/blocklist.txt"}
+  }
+}

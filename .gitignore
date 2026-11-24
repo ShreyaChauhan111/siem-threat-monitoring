@@ -1,0 +1,4 @@
+__pycache__/
+data/siem.db
+logs/*.log
+logs/*.jsonl

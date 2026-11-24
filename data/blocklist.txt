@@ -1,0 +1,3 @@
+# Threat-intel blocklist: one IP per line (demo values, documentation/test ranges not guaranteed benign)
+91.92.109.3
+194.165.16.11
